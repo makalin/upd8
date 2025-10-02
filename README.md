@@ -1,5 +1,7 @@
 # upd8
 
+![upd8 logo](upd8_logo.png)
+
 > Universal package manager update checker — one CLI to rule them all.  
 
 `upd8` scans your system for supported package managers (npm, pip, cargo, brew, snap, flatpak, …), lists outdated packages, and shows you a **single one-liner** to update each.  
@@ -59,6 +61,15 @@ Sample output:
 📦 cargo    2 outdated  →  cargo install-update -a
 📦 flatpak  4 outdated  →  flatpak update
 ```
+
+
+### Flags
+
+- `--packages` — include a short list of outdated packages for each manager.
+- `--verbose` — show package managers even when no updates are available.
+- `--watch` — keep running and re-scan on an interval (default 24h).
+- `--interval=<duration>` — change the watch interval (e.g. `--interval=1h`).
+- `--no-color` — disable ANSI colors in the output.
 
 ---
 
